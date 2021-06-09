@@ -6,7 +6,7 @@ namespace Access_Management.Client.Extensions
 {
     public static class AppBuilderExtensions
     {
-        public static IApplicationBuilder UseAurigoAPIAccessAuthorization(
+        public static IApplicationBuilder UseAPIAccessAuthorization(
         this IApplicationBuilder builder, APIAccessAuthorizationOptions options)
         {
             return builder.UseMiddleware<APIAccessAuthorizationMiddleware>(options);

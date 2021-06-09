@@ -12,10 +12,10 @@ namespace Access_Management.Infrastructure.Services
 {
     public class AuthorizationPolicyService : IAuthorizationPolicyService
     {
-        private readonly ApplicationDbContext _dbContext;
+        private readonly AuthorizationPolicyDbContext _dbContext;
         private readonly ITenantOrganizationService _tenantOrganizationService;
 
-        public AuthorizationPolicyService(ApplicationDbContext dbContext, ITenantOrganizationService tenantOrganizationService)
+        public AuthorizationPolicyService(AuthorizationPolicyDbContext dbContext, ITenantOrganizationService tenantOrganizationService)
         {
             _dbContext = dbContext;
             _tenantOrganizationService = tenantOrganizationService;

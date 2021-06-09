@@ -10,7 +10,7 @@ namespace Access_Management.Controllers
 {
     [ApiController]
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
 
     public class ApiController : ControllerBase
     {
